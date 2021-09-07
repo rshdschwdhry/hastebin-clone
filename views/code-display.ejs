@@ -31,7 +31,13 @@
         <% } %>
       </div>
 
-      <pre><code id='code-display' class="language-plaintext"><%= code %></code></pre>
+      <pre>
+        <code id='code-display' 
+        class='<% locals.language ? `language-${locals.language}` "" %>'
+        >
+        <%= code %>
+      </code>
+    </pre>
     </div>
     <h1>This is the code display.</h1>
   </body>
